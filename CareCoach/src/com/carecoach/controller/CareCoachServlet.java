@@ -39,6 +39,9 @@ public class CareCoachServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
+		
+		
 		doGet(request, response);
 	}
 

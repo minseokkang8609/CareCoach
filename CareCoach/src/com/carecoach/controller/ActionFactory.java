@@ -2,7 +2,6 @@ package com.carecoach.controller;
 
 
 import com.carecoach.controller.action.*;
-import com.carecoach.controller.action.LoginAction;
 
 public class ActionFactory {
 
@@ -27,7 +26,14 @@ public class ActionFactory {
 			action = new LoginFormAction();
 		}else if(command.equals("login")) {
 			action = new LoginAction();
+		}else if(command.equals("logout")) {
+			action = new LogoutAction();
+		}else if(command.equals("find_id")) {
+			action = new FindIdAction();
+		}else if(command.equals("find_id_result")) {
+			action = new FindIdResultAction();
 		}
+		
 		
 		return action;
 	}
