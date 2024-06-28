@@ -10,12 +10,14 @@
           <input type="password" name="password" placeholder="비밀번호" />
         </div>
         <div class="loginNavigation">
-          <a href="#">아이디 찾기</a>
-          <a href="#">비밀번호 찾기</a>
-          <a href="#">회원가입</a>
+          <input type="button" value="아이디 찾기" onclick="post_findId()">
+          <input type="button" value="비밀번호 찾기" onclick="post_findPwd()">
+          <input type="button" value="회원가입">
         </div>
         <input type="submit" value="로그인" />
-      </form>
+       </form>
     </div>
     
+    
+<script type="text/javascript" src="js/post_findid.js"></script>
 <%@ include file="../footer.jsp" %>

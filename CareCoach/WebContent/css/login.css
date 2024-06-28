@@ -2,6 +2,18 @@
 
 /* ==== main ==== */
 
+input[type="button"] {
+  background: none; /* 배경 제거 */
+  border: none; /* 테두리 제거 */
+  padding: 0; /* 패딩 제거 */
+  margin: 0; /* 마진 제거 */
+  font: inherit; /* 폰트 상속 */
+  color: inherit; /* 텍스트 색상 상속 */
+  outline: none; /* 포커스 아웃라인 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경 */
+}
+
+
 .loginWrapper {
   margin: 0 auto;
   width: 500px;
@@ -84,7 +96,7 @@
   margin-top: 1rem;
 }
 
-.loginNavigation a {
+.loginNavigation input {
   padding: 0.125rem 0.5rem;
   width: fit-content;
   border-right: 1px solid #d2d2d2;
@@ -92,10 +104,10 @@
   transition: all ease-in-out 100ms;
 }
 
-.loginNavigation a:hover {
+.loginNavigation input:hover {
   text-decoration: underline;
 }
 
-.loginNavigation a:last-child {
+.loginNavigation input:last-child {
   border: 0px;
 }

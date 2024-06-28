@@ -59,18 +59,15 @@ pageEncoding="UTF-8"%>
         <div class="auth-links">
           <c:choose>
             <c:when test="${empty sessionScope.loginUser}">
-              <li>
-                <a href="CareCoach?command=login_form">Login(CUSTOMER</a>
-                <a href="CareCoach?command=admin_login_form">| ADMIN)</a>
-              </li>
+              <li><a href="CareCoach?command=login_form">Login</a></li>
               <li class="contour">|</li>
               <li><a href="CareCoach?command=contract">Join</a></li>
             </c:when>
             <c:otherwise>
               <li>
-                ${sessionScope.loginUser.name}(${sessionScope.loginUser.id})
+               <a href="CareCoach?command=logout">LOGOUT |</a>
               </li>
-              <li><a href="CareCoach?command=logout">LOGOUT</a></li>
+              <li><a href="CareCoach?command=mypage">마이페이지</a></li>
             </c:otherwise>
           </c:choose>
         </div>
